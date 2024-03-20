@@ -7,6 +7,7 @@ use reqwest::Client;
 use std::sync::Arc;
 use url;
 
+#[derive(Clone)]
 pub struct HCaptcha {
     client: Arc<Client>,
     secret: String,
